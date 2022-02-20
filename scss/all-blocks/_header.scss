@@ -1,3 +1,74 @@
 .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+
+    &::after{
+        content: "";
+        background: url(../img/sun.svg)no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top:23px;
+        right: 120px;
+    }
+
+    &>img{
+        display: flex;
+        margin-left: 10px;
+    }
+
+    &__input{
+        width: 500px;
+        margin-right: 50px;
+        background: #F8FAFD;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        padding: 9px;
+        padding-left: 40px;
+        position: relative;
+        border: none;
+        outline: none;
+        color: #505052;
+
+        
+    }
+
+    &__label{
+        position: relative;
+
+        &::after{
+            content: "";
+            background: url(../img/search.svg)no-repeat;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 7px;
+            left: 15px;
+        }
+    }
+
+    &__button{
+        background: #0D75FF;
+        border-radius: 4px;
+        padding: 9px 20px;
+        font-family: "Rubik";
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        border: none;
+        text-decoration: none;
+        &:hover{
+            background-color: #7299cc;
+        }
+        &:active{
+            box-shadow: 0 0 5px black;
+            color: #ee503b;
+        }
+    }
 }
 
